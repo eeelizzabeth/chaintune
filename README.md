@@ -59,3 +59,25 @@ Chaintune is designed to help people stay focused on a task rather than their mo
 > Polish Front-End
 
 ### Wireframes
+>App index
+
+  <img src='wireframes/app-index.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+> Sign-in
+
+  <img src='wireframes/sign-in.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+> Sign-up
+
+  <img src='wireframes/sign-up.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+> Home
+
+  <img src='wireframes/home.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+> User-Stats
+
+  <img src='wireframes/user-stats.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+> Create-Group
+
+  <img src='wireframes/create-group.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+> Leaderboard
+
+  <img src='wireframes/leaderboard.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
