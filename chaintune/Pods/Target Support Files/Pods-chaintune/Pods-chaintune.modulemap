@@ -1,0 +1,6 @@
+framework module Pods_chaintune {
+  umbrella header "Pods-chaintune-umbrella.h"
+
+  export *
+  module * { export * }
+}

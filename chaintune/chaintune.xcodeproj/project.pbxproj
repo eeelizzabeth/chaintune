@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B70030812BA333497DCB9FD /* Pods_chaintune_chaintuneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606B27139B11B7C80736A976 /* Pods_chaintune_chaintuneUITests.framework */; };
+		5F6FB88B65C20F232C791958 /* Pods_chaintuneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E847CE710EAF0C87DBA2C07 /* Pods_chaintuneTests.framework */; };
+		C13EB4F93C1F239777AE47DE /* Pods_chaintune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86682F4C4FA4DAF3D07DAE0B /* Pods_chaintune.framework */; };
 		C198BA73236940AF00EA6692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198BA72236940AF00EA6692 /* AppDelegate.swift */; };
 		C198BA75236940AF00EA6692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198BA74236940AF00EA6692 /* SceneDelegate.swift */; };
 		C198BA77236940AF00EA6692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198BA76236940AF00EA6692 /* ContentView.swift */; };
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AE5A9DD2D6DB1B50F8F476F /* Pods-chaintune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintune.debug.xcconfig"; path = "Target Support Files/Pods-chaintune/Pods-chaintune.debug.xcconfig"; sourceTree = "<group>"; };
+		1CC6FA7BEC43FCC341C7ECEF /* Pods-chaintune-chaintuneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintune-chaintuneUITests.debug.xcconfig"; path = "Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		606B27139B11B7C80736A976 /* Pods_chaintune_chaintuneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chaintune_chaintuneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F87E65B9F16E5F3235DEDF9 /* Pods-chaintuneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintuneTests.debug.xcconfig"; path = "Target Support Files/Pods-chaintuneTests/Pods-chaintuneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86682F4C4FA4DAF3D07DAE0B /* Pods_chaintune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chaintune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968268723EA5763A3D01C03C /* Pods-chaintune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintune.release.xcconfig"; path = "Target Support Files/Pods-chaintune/Pods-chaintune.release.xcconfig"; sourceTree = "<group>"; };
+		9E847CE710EAF0C87DBA2C07 /* Pods_chaintuneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chaintuneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198BA6F236940AF00EA6692 /* chaintune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chaintune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198BA72236940AF00EA6692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C198BA74236940AF00EA6692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		C198BA90236940B400EA6692 /* chaintuneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chaintuneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198BA94236940B400EA6692 /* chaintuneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chaintuneUITests.swift; sourceTree = "<group>"; };
 		C198BA96236940B400EA6692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB7F3C451E7C9371C0DC5727 /* Pods-chaintune-chaintuneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintune-chaintuneUITests.release.xcconfig"; path = "Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E938D155390E5127659C65CC /* Pods-chaintuneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintuneTests.release.xcconfig"; path = "Target Support Files/Pods-chaintuneTests/Pods-chaintuneTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13EB4F93C1F239777AE47DE /* Pods_chaintune.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6FB88B65C20F232C791958 /* Pods_chaintuneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B70030812BA333497DCB9FD /* Pods_chaintune_chaintuneUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3894E0C65F0BE1B643828C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86682F4C4FA4DAF3D07DAE0B /* Pods_chaintune.framework */,
+				606B27139B11B7C80736A976 /* Pods_chaintune_chaintuneUITests.framework */,
+				9E847CE710EAF0C87DBA2C07 /* Pods_chaintuneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43E1EC95D5E94DEB23488F18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AE5A9DD2D6DB1B50F8F476F /* Pods-chaintune.debug.xcconfig */,
+				968268723EA5763A3D01C03C /* Pods-chaintune.release.xcconfig */,
+				1CC6FA7BEC43FCC341C7ECEF /* Pods-chaintune-chaintuneUITests.debug.xcconfig */,
+				DB7F3C451E7C9371C0DC5727 /* Pods-chaintune-chaintuneUITests.release.xcconfig */,
+				6F87E65B9F16E5F3235DEDF9 /* Pods-chaintuneTests.debug.xcconfig */,
+				E938D155390E5127659C65CC /* Pods-chaintuneTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C198BA66236940AE00EA6692 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				C198BA88236940B400EA6692 /* chaintuneTests */,
 				C198BA93236940B400EA6692 /* chaintuneUITests */,
 				C198BA70236940AF00EA6692 /* Products */,
+				43E1EC95D5E94DEB23488F18 /* Pods */,
+				3894E0C65F0BE1B643828C3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C198BA99236940B400EA6692 /* Build configuration list for PBXNativeTarget "chaintune" */;
 			buildPhases = (
+				20B07C05307D2923D7562AD3 /* [CP] Check Pods Manifest.lock */,
 				C198BA6B236940AF00EA6692 /* Sources */,
 				C198BA6C236940AF00EA6692 /* Frameworks */,
 				C198BA6D236940AF00EA6692 /* Resources */,
+				B60A2B548D5141EAC5E0ABCB /* [CP] Embed Pods Frameworks */,
+				0B79BC1DEF993F9DBAF10E6D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C198BA9C236940B400EA6692 /* Build configuration list for PBXNativeTarget "chaintuneTests" */;
 			buildPhases = (
+				EDA6F0DFF36981A60AFF7DED /* [CP] Check Pods Manifest.lock */,
 				C198BA81236940B400EA6692 /* Sources */,
 				C198BA82236940B400EA6692 /* Frameworks */,
 				C198BA83236940B400EA6692 /* Resources */,
@@ -178,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C198BA9F236940B400EA6692 /* Build configuration list for PBXNativeTarget "chaintuneUITests" */;
 			buildPhases = (
+				DC75F34432F80509781BA777 /* [CP] Check Pods Manifest.lock */,
 				C198BA8C236940B400EA6692 /* Sources */,
 				C198BA8D236940B400EA6692 /* Frameworks */,
 				C198BA8E236940B400EA6692 /* Resources */,
+				B21583C79EB29485A6ECD1F7 /* [CP] Embed Pods Frameworks */,
+				FE876C699EAD5534080261C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +309,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B79BC1DEF993F9DBAF10E6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chaintune/Pods-chaintune-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chaintune/Pods-chaintune-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chaintune/Pods-chaintune-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20B07C05307D2923D7562AD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chaintune-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21583C79EB29485A6ECD1F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60A2B548D5141EAC5E0ABCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chaintune/Pods-chaintune-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chaintune/Pods-chaintune-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chaintune/Pods-chaintune-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC75F34432F80509781BA777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chaintune-chaintuneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA6F0DFF36981A60AFF7DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chaintuneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE876C699EAD5534080261C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C198BA6B236940AF00EA6692 /* Sources */ = {
@@ -432,6 +617,7 @@
 		};
 		C198BA9A236940B400EA6692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE5A9DD2D6DB1B50F8F476F /* Pods-chaintune.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +637,7 @@
 		};
 		C198BA9B236940B400EA6692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968268723EA5763A3D01C03C /* Pods-chaintune.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +657,7 @@
 		};
 		C198BA9D236940B400EA6692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F87E65B9F16E5F3235DEDF9 /* Pods-chaintuneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +679,7 @@
 		};
 		C198BA9E236940B400EA6692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E938D155390E5127659C65CC /* Pods-chaintuneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +701,7 @@
 		};
 		C198BAA0236940B400EA6692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC6FA7BEC43FCC341C7ECEF /* Pods-chaintune-chaintuneUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +721,7 @@
 		};
 		C198BAA1236940B400EA6692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB7F3C451E7C9371C0DC5727 /* Pods-chaintune-chaintuneUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
