@@ -7,8 +7,21 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
 
 struct ContentView: View {
+     var body: some View {
+            Login()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+struct Login: View {
     @State var username = "placehokder"
     @State var password = "123"
     
@@ -31,11 +44,6 @@ struct ContentView: View {
         }
         
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(username: "", password: "")
-    }
+    
 }
 

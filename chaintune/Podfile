@@ -6,7 +6,7 @@ target 'chaintune' do
   use_frameworks!
 
   # Pods for chaintune
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
   pod 'GoogleSignIn'
 
 
