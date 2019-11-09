@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
       let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                         accessToken: authentication.accessToken)
       // ...
-        Auth.auth.signIn(with: credential) { (res, error) in
+    Auth.auth().signIn(with: credential) { (res, error) in
         
             print("user= " + (res?.user.email)!)
         }
