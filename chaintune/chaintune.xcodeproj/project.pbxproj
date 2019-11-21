@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4B70030812BA333497DCB9FD /* Pods_chaintune_chaintuneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606B27139B11B7C80736A976 /* Pods_chaintune_chaintuneUITests.framework */; };
 		5F6FB88B65C20F232C791958 /* Pods_chaintuneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E847CE710EAF0C87DBA2C07 /* Pods_chaintuneTests.framework */; };
+		C11526062384C12B00F107CD /* FirebaseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11526052384C12B00F107CD /* FirebaseSession.swift */; };
+		C11526082384C27000F107CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11526072384C27000F107CD /* User.swift */; };
+		C115260A2384C2E800F107CD /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11526092384C2E800F107CD /* Record.swift */; };
 		C13EB4F93C1F239777AE47DE /* Pods_chaintune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86682F4C4FA4DAF3D07DAE0B /* Pods_chaintune.framework */; };
 		C173BE4C2373B943001876F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C173BE4B2373B943001876F4 /* GoogleService-Info.plist */; };
 		C198BA73236940AF00EA6692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198BA72236940AF00EA6692 /* AppDelegate.swift */; };
@@ -46,6 +49,9 @@
 		86682F4C4FA4DAF3D07DAE0B /* Pods_chaintune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chaintune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		968268723EA5763A3D01C03C /* Pods-chaintune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintune.release.xcconfig"; path = "Target Support Files/Pods-chaintune/Pods-chaintune.release.xcconfig"; sourceTree = "<group>"; };
 		9E847CE710EAF0C87DBA2C07 /* Pods_chaintuneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chaintuneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11526052384C12B00F107CD /* FirebaseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSession.swift; sourceTree = "<group>"; };
+		C11526072384C27000F107CD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C11526092384C2E800F107CD /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		C173BE4B2373B943001876F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C198BA6F236940AF00EA6692 /* chaintune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chaintune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198BA72236940AF00EA6692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 				C198BA80236940B400EA6692 /* Info.plist */,
 				C173BE4B2373B943001876F4 /* GoogleService-Info.plist */,
 				C198BA7A236940B400EA6692 /* Preview Content */,
+				C11526052384C12B00F107CD /* FirebaseSession.swift */,
+				C11526072384C27000F107CD /* User.swift */,
+				C11526092384C2E800F107CD /* Record.swift */,
 			);
 			path = chaintune;
 			sourceTree = "<group>";
@@ -456,7 +465,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C198BA73236940AF00EA6692 /* AppDelegate.swift in Sources */,
+				C11526062384C12B00F107CD /* FirebaseSession.swift in Sources */,
+				C115260A2384C2E800F107CD /* Record.swift in Sources */,
 				C198BA75236940AF00EA6692 /* SceneDelegate.swift in Sources */,
+				C11526082384C27000F107CD /* User.swift in Sources */,
 				C198BA77236940AF00EA6692 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

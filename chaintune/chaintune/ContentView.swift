@@ -10,9 +10,15 @@ import SwiftUI
 import Firebase
 import GoogleSignIn
 
+
+
 struct ContentView: View {
+    @ObservedObject var session = FirebaseSession()
+
+
      var body: some View {
-            Login()
+        Login(session: self.session)
+
     }
 }
 
@@ -22,8 +28,9 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 struct Login: View {
-    @State var username = "placehokder"
-    @State var password = "123"
+    @ObservedObject var session: FirebaseSession
+    @State var username = ""
+    @State var password = ""
     @State var shown = false
     @State var msg = ""
 
@@ -32,19 +39,20 @@ struct Login: View {
     var body: some View {
         NavigationView {
             VStack(){
-                TextField("Username", text: $username).background(Color.white).clipShape(RoundedRectangle(cornerRadius: 8))
+                TextField("Email", text: $username).background(Color.white)
                     .padding()
                 TextField("Password", text: $password).background(Color.white)
                 .padding()
                 HStack{
                     Button(action: {
-                        Auth.auth().signIn(withEmail: self.username, link: self.password){ (res, err) in
+                        self.session.logIn(email: self.username, password: self.password){ (res, err) in
                             if err != nil {
                                 print((err!.localizedDescription))
                                 self.msg = err!.localizedDescription
                                 self.shown.toggle()
                                 return
                             }
+                            self.session.uploadRecord(user: self.username, duration: 554, startTime: "skjm", endTime:"sda")
                             self.msg = "Success"
                             self.shown.toggle()
                         }
@@ -52,27 +60,15 @@ struct Login: View {
                                        
                         Text("Login")
                     }
-                    Button(action: {
-                        Auth.auth().createUser(withEmail: self.username, password: self.password){ (res, err) in
-                            if err != nil {
-                                print((err!.localizedDescription))
-                                self.msg = err!.localizedDescription
-                                self.shown.toggle()
-                                return
-                            }
-                            self.msg = "Success"
-                            self.shown.toggle()
-
-                        }
-                    }){
-                                      
-                        Text("Sign Up")
+                    NavigationLink(destination: signUp(session: self.session)) {
+                                  Text("Sign Up")
                     }
                 }.alert(isPresented: $shown){
                     return Alert(title: Text(self.msg))
                 }
                
                 google().frame(width: 120, height: 50, alignment: .center)
+               
             }
             .navigationBarTitle("Log In")
     
@@ -91,6 +87,50 @@ struct google: UIViewRepresentable {
     }
     func updateUIView(_ uiView: GIDSignInButton, context: UIViewRepresentableContext<google>) {
         
+    }
+}
+
+
+struct signUp: View {
+    @ObservedObject var session: FirebaseSession
+
+    
+    @State var name = ""
+    @State var email = ""
+    @State var password = ""
+    @State var shown = false
+    @State var msg = ""
+    
+    var body: some View {
+        NavigationView{
+            VStack(){
+                
+                TextField("Name", text: $name).background(Color.white).padding()
+                TextField("Email", text: $email).background(Color.white).padding()
+                TextField("Password", text: $password).background(Color.white).padding()
+                
+                   Button(action: {
+                            self.session.signUp(email: self.email, password: self.password) {(res, err) in
+                                if err != nil {
+                                    print((err!.localizedDescription))
+                                    self.msg = err!.localizedDescription
+                                    self.shown.toggle()
+                                    return
+                                }
+                            self.session.listen()
+                            self.session.uploadRecord(user: self.name, duration: 554, startTime: "skjm", endTime:"sda")
+                            self.msg = "Success"
+                            self.shown.toggle()
+                
+                            }
+                        }){
+
+                    Text("Sign Up")
+                }
+
+            }
+
+        }
     }
 }
 
