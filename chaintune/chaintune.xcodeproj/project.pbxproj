@@ -22,6 +22,9 @@
 		C198BA7F236940B400EA6692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C198BA7D236940B400EA6692 /* LaunchScreen.storyboard */; };
 		C198BA8A236940B400EA6692 /* chaintuneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198BA89236940B400EA6692 /* chaintuneTests.swift */; };
 		C198BA95236940B400EA6692 /* chaintuneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198BA94236940B400EA6692 /* chaintuneUITests.swift */; };
+		D16392072386315F0076E2F1 /* createGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16392062386315F0076E2F1 /* createGroup.swift */; };
+		D1639209238631750076E2F1 /* sideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1639208238631750076E2F1 /* sideMenu.swift */; };
+		D163920B238632580076E2F1 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163920A238632580076E2F1 /* home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		C198BA90236940B400EA6692 /* chaintuneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chaintuneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198BA94236940B400EA6692 /* chaintuneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chaintuneUITests.swift; sourceTree = "<group>"; };
 		C198BA96236940B400EA6692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D16392062386315F0076E2F1 /* createGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createGroup.swift; sourceTree = "<group>"; };
+		D1639208238631750076E2F1 /* sideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenu.swift; sourceTree = "<group>"; };
+		D163920A238632580076E2F1 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
 		DB7F3C451E7C9371C0DC5727 /* Pods-chaintune-chaintuneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintune-chaintuneUITests.release.xcconfig"; path = "Target Support Files/Pods-chaintune-chaintuneUITests/Pods-chaintune-chaintuneUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E938D155390E5127659C65CC /* Pods-chaintuneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintuneTests.release.xcconfig"; path = "Target Support Files/Pods-chaintuneTests/Pods-chaintuneTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +164,9 @@
 				C11526052384C12B00F107CD /* FirebaseSession.swift */,
 				C11526072384C27000F107CD /* User.swift */,
 				C11526092384C2E800F107CD /* Record.swift */,
+				D163920A238632580076E2F1 /* home.swift */,
+				D16392062386315F0076E2F1 /* createGroup.swift */,
+				D1639208238631750076E2F1 /* sideMenu.swift */,
 			);
 			path = chaintune;
 			sourceTree = "<group>";
@@ -465,9 +474,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C198BA73236940AF00EA6692 /* AppDelegate.swift in Sources */,
+				D16392072386315F0076E2F1 /* createGroup.swift in Sources */,
 				C11526062384C12B00F107CD /* FirebaseSession.swift in Sources */,
+				D1639209238631750076E2F1 /* sideMenu.swift in Sources */,
 				C115260A2384C2E800F107CD /* Record.swift in Sources */,
 				C198BA75236940AF00EA6692 /* SceneDelegate.swift in Sources */,
+				D163920B238632580076E2F1 /* home.swift in Sources */,
 				C11526082384C27000F107CD /* User.swift in Sources */,
 				C198BA77236940AF00EA6692 /* ContentView.swift in Sources */,
 			);
