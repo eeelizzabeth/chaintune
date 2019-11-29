@@ -11,6 +11,10 @@ target 'chaintune' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   pod 'GoogleSignIn'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+
+
 
 
   target 'chaintuneTests' do
