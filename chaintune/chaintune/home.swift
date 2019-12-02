@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct home: View {
+    @EnvironmentObject var session: FirebaseSession
     @State var menuOpen: Bool = false
     var body: some View {
         NavigationView {
@@ -57,8 +58,10 @@ struct home: View {
                 })
                 //****************************************************************
                     //*************************User Icon******************************
-                    , trailing: Button("User Icon") {
-                        print("User Icon button!")
+                    , trailing: Button(action: {
+                        self.session.logOut()
+                    }){
+                        Text("Logout")
                     }
                     //****************************************************************
             )}

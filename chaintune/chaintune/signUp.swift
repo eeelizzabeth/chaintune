@@ -34,6 +34,14 @@ struct signUp: View {
                                     self.shown.toggle()
                                     return
                                 }
+                                db.collection("users").document(self.session.userSession!.uid).setData([
+                                    "Name": self.name,
+                                    "Email": self.email,
+                                    "Password": self.password,
+                                    "Total": 0,
+                                    "StreakDays": 0,
+                                    "Streak": false
+                                ])
                             self.session.listen()
                             self.msg = "Success"
                             self.shown.toggle()

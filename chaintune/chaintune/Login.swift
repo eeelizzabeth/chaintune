@@ -40,11 +40,6 @@ struct Login: View {
                                        
                         Text("Login")
                     }
-                    Button(action: {
-                        db.collection("users").document("6cF2whOzNwXsjMuqxxjV").setData(["String" : "Any"])
-                    }){
-                        Text("TESTTT")
-                    }
                     NavigationLink(destination: signUp()) {
                                   Text("Sign Up")
                     }
