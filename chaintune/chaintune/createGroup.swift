@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct createGroup: View {
     @State private var groupName: String = "";
@@ -22,12 +23,40 @@ struct createGroup: View {
                     }
 
                     Spacer()
+                HStack(alignment: .center) {
+                        Spacer().frame(width: 170)
+                        Button("Create") {
+                            print("Create Group!")
+                            self.getGroup(name: self.groupName, size: self.sizeGroup)
+                            print("Success!")
+                        }
+                    }
+                    
+                    Spacer()
+                
                 }.padding()
             .navigationBarTitle("Create Group")
         }
         
     }
+    
+    func getGroup(name: String, size: String) {
+        var ref: DocumentReference? = nil
+        
+        ref = db.collection("userTest").addDocument(data: [
+            "name": name,
+            "size": size
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+    }
 }
+
+
 
 struct createGroup_Previews: PreviewProvider {
     static var previews: some View {

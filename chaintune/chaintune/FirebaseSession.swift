@@ -15,7 +15,6 @@ import FirebaseDatabase
 class FirebaseSession: ObservableObject {
        @Published var userSession: User?
        @Published var isLoggedIn: Bool?
-//       @Published var items: [Record] = []
 
      
        
