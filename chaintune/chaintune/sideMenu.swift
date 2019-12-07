@@ -11,18 +11,21 @@ import SwiftUI
 struct MenuContent: View {
     var body: some View {
         List {
-            Text("Leaderboard").onTapGesture {
-                print("Leaderboard!")
+            NavigationLink(destination: leaderboard())
+            {
+                Text("Leaderboard")
             }
-            Text("User Stats").onTapGesture {
-                print("User Stats!")
+            NavigationLink(destination: userStats())
+            {
+                Text("User Stats")
             }
-            Text("Creat Group").onTapGesture {
-                print("Create Group!")
-                
+            NavigationLink(destination: createGroup())
+            {
+                Text("Create Group")
             }
-            Text("Settings").onTapGesture {
-                print("Settings!")
+            NavigationLink(destination: settings())
+            {
+                Text("Settings")
             }
         }
     }
