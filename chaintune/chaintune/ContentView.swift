@@ -19,12 +19,13 @@ struct ContentView: View {
           
           NavigationView{
               if session.userSession != nil {
-//                      home()
-                    mockCounting()
+                      home()
+//                    mockCounting()
 
               }else{
 //                mockCounting()
-                Login()
+//                Login()
+                home()
               }
           }
           .onAppear(perform: getUser)
