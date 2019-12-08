@@ -19,7 +19,6 @@ struct mockCounting: View {
             VStack {
                 
                 Slider(value: $minutes, in: 5.0...120.0, step: 5.0)
-//                Text(countDownString(minutes: Int(self.minutes), seconds: self.stopwatch.seconds))
                 Text(isFlipped ? countDownString(minutes: Int(self.minutes), seconds: self.stopwatch.seconds): countDownString(minutes: Int(self.stopwatch.minutes), seconds: self.stopwatch.seconds))
                                         .font(.largeTitle)
                     .onTapGesture {

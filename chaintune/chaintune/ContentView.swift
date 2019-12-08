@@ -24,9 +24,10 @@ struct ContentView: View {
                     
 
               }else{
-                mockCounting()
+//                CircularProgressBar()
+//                mockCounting()
 //                Login()
-//                  home()
+                  home()
                 
               }
           }
