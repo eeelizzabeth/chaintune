@@ -13,6 +13,7 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class FirebaseSession: ObservableObject {
+      static let shared = FirebaseSession()
        @Published var userSession: User?
        @Published var isLoggedIn: Bool?
 

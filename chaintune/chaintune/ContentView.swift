@@ -26,8 +26,8 @@ struct ContentView: View {
               }else{
 //                CircularProgressBar()
 //                mockCounting()
-//                Login()
-                  home()
+                Login()
+//                  home()
                 
               }
           }
@@ -49,15 +49,15 @@ struct ContentView_Previews: PreviewProvider {
 
 
 struct google: UIViewRepresentable {
-    func makeUIView(context: UIViewRepresentableContext<google>) -> GIDSignInButton {
-        let button = GIDSignInButton()
-        button.colorScheme = .dark
-        GIDSignIn.sharedInstance()?.presentingViewController = UIApplication.shared.windows.last?.rootViewController
-        return button
-    }
-    func updateUIView(_ uiView: GIDSignInButton, context: UIViewRepresentableContext<google>) {
-        
-    }
+func makeUIView(context: UIViewRepresentableContext<google>) -> GIDSignInButton {
+    let button = GIDSignInButton()
+    button.colorScheme = .dark
+    GIDSignIn.sharedInstance()?.presentingViewController = UIApplication.shared.windows.last?.rootViewController
+    return button
+}
+func updateUIView(_ uiView: GIDSignInButton, context: UIViewRepresentableContext<google>) {
+    
+}
 }
 
 
