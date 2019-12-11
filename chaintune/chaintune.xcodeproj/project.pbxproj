@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		4B70030812BA333497DCB9FD /* Pods_chaintune_chaintuneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606B27139B11B7C80736A976 /* Pods_chaintune_chaintuneUITests.framework */; };
 		5F6FB88B65C20F232C791958 /* Pods_chaintuneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E847CE710EAF0C87DBA2C07 /* Pods_chaintuneTests.framework */; };
+		935E60D9239C5F0300FB36DB /* RKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E60D8239C5F0300FB36DB /* RKCell.swift */; };
+		935E60DD239C5F6F00FB36DB /* RKColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E60DC239C5F6F00FB36DB /* RKColorSettings.swift */; };
+		935E60DF239C5F9E00FB36DB /* RKDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E60DE239C5F9E00FB36DB /* RKDate.swift */; };
+		935E60E1239C5FDB00FB36DB /* RKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E60E0239C5FDB00FB36DB /* RKManager.swift */; };
+		935E60E3239C5FFF00FB36DB /* RKMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E60E2239C5FFF00FB36DB /* RKMonth.swift */; };
+		935E60E5239C604800FB36DB /* RKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E60E4239C604800FB36DB /* RKViewController.swift */; };
+		935E60E7239C60C400FB36DB /* RKWeekdayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E60E6239C60C400FB36DB /* RKWeekdayHeader.swift */; };
 		C11526062384C12B00F107CD /* FirebaseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11526052384C12B00F107CD /* FirebaseSession.swift */; };
 		C11526082384C27000F107CD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11526072384C27000F107CD /* User.swift */; };
 		C13EB4F93C1F239777AE47DE /* Pods_chaintune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86682F4C4FA4DAF3D07DAE0B /* Pods_chaintune.framework */; };
@@ -60,6 +67,13 @@
 		606B27139B11B7C80736A976 /* Pods_chaintune_chaintuneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chaintune_chaintuneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F87E65B9F16E5F3235DEDF9 /* Pods-chaintuneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintuneTests.debug.xcconfig"; path = "Target Support Files/Pods-chaintuneTests/Pods-chaintuneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		86682F4C4FA4DAF3D07DAE0B /* Pods_chaintune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chaintune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		935E60D8239C5F0300FB36DB /* RKCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKCell.swift; sourceTree = "<group>"; };
+		935E60DC239C5F6F00FB36DB /* RKColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKColorSettings.swift; sourceTree = "<group>"; };
+		935E60DE239C5F9E00FB36DB /* RKDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKDate.swift; sourceTree = "<group>"; };
+		935E60E0239C5FDB00FB36DB /* RKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKManager.swift; sourceTree = "<group>"; };
+		935E60E2239C5FFF00FB36DB /* RKMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKMonth.swift; sourceTree = "<group>"; };
+		935E60E4239C604800FB36DB /* RKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKViewController.swift; sourceTree = "<group>"; };
+		935E60E6239C60C400FB36DB /* RKWeekdayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKWeekdayHeader.swift; sourceTree = "<group>"; };
 		968268723EA5763A3D01C03C /* Pods-chaintune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chaintune.release.xcconfig"; path = "Target Support Files/Pods-chaintune/Pods-chaintune.release.xcconfig"; sourceTree = "<group>"; };
 		9E847CE710EAF0C87DBA2C07 /* Pods_chaintuneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chaintuneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11526052384C12B00F107CD /* FirebaseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSession.swift; sourceTree = "<group>"; };
@@ -148,6 +162,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		935E60D7239C5E8D00FB36DB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				935E60D8239C5F0300FB36DB /* RKCell.swift */,
+				935E60DC239C5F6F00FB36DB /* RKColorSettings.swift */,
+				935E60DE239C5F9E00FB36DB /* RKDate.swift */,
+				935E60E0239C5FDB00FB36DB /* RKManager.swift */,
+				935E60E2239C5FFF00FB36DB /* RKMonth.swift */,
+				935E60E4239C604800FB36DB /* RKViewController.swift */,
+				935E60E6239C60C400FB36DB /* RKWeekdayHeader.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		C198BA66236940AE00EA6692 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +201,7 @@
 		C198BA71236940AF00EA6692 /* chaintune */ = {
 			isa = PBXGroup;
 			children = (
+				935E60D7239C5E8D00FB36DB /* Manager */,
 				C198BA72236940AF00EA6692 /* AppDelegate.swift */,
 				C198BA74236940AF00EA6692 /* SceneDelegate.swift */,
 				C11526052384C12B00F107CD /* FirebaseSession.swift */,
@@ -504,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C198BA73236940AF00EA6692 /* AppDelegate.swift in Sources */,
+				935E60E1239C5FDB00FB36DB /* RKManager.swift in Sources */,
 				C147414C2390D8FE00BBEE0A /* Login.swift in Sources */,
 				D1131EAF239C4347008EDD96 /* mockCounting.swift in Sources */,
 				D1131EB3239C46D8008EDD96 /* CircularProgressBar.swift in Sources */,
@@ -513,12 +543,18 @@
 				C11526062384C12B00F107CD /* FirebaseSession.swift in Sources */,
 				D1131EA1239603FB008EDD96 /* friends.swift in Sources */,
 				D1131EA32396045D008EDD96 /* groups.swift in Sources */,
+				935E60E3239C5FFF00FB36DB /* RKMonth.swift in Sources */,
+				935E60E7239C60C400FB36DB /* RKWeekdayHeader.swift in Sources */,
 				D1131EA723960807008EDD96 /* userStats.swift in Sources */,
 				D1639209238631750076E2F1 /* sideMenu.swift in Sources */,
 				C198BA75236940AF00EA6692 /* SceneDelegate.swift in Sources */,
 				D163920B238632580076E2F1 /* home.swift in Sources */,
+				935E60E5239C604800FB36DB /* RKViewController.swift in Sources */,
+				935E60DD239C5F6F00FB36DB /* RKColorSettings.swift in Sources */,
 				C11526082384C27000F107CD /* User.swift in Sources */,
 				C198BA77236940AF00EA6692 /* ContentView.swift in Sources */,
+				935E60D9239C5F0300FB36DB /* RKCell.swift in Sources */,
+				935E60DF239C5F9E00FB36DB /* RKDate.swift in Sources */,
 				D1131EA92396085D008EDD96 /* settings.swift in Sources */,
 				D1131E9F23960370008EDD96 /* friendCell.swift in Sources */,
 				D1131EA5239607D0008EDD96 /* leaderboard.swift in Sources */,
