@@ -40,7 +40,8 @@ struct home: View {
 
                     }
                     //***************************************************************
-                }
+                }.edgesIgnoringSafeArea(.all)
+                    .navigationBarTitle("Home")
                 
                 CircularProgressBar()
                 

@@ -27,28 +27,18 @@ struct CircularProgressBar: View {
         VStack {
             ZStack {
                 VStack {
-                    //2. Create the inner, static circle
-                    Circle()
-                        .stroke(Color.gray, lineWidth: num)
-                        .frame(width: num2, height: num2)
-                        .rotationEffect(Angle(degrees: num3))
                     //3. Create the outer, dynamic circle, depending on the States value
                     Circle()
                         .trim(from: 0.0, to: self.circleProgress)
                         .stroke(Color.purple, lineWidth: 12.0)
-                        .frame(width: 200, height: 200)
+                        .frame(width: 255, height: 255).position(x: 190, y:240)
                         .rotationEffect(Angle(degrees: -90))
                     
-                    Spacer().frame(height: -65)
+//                    Spacer().frame(height: -65)
                 }
-                
-                //4.Insert a Text showing the percentage value
-                Text("\(Int(self.circleProgress)*100)%")
-                    .font(Font.custom("Montserrat-Bold",size: 30))
-                    .frame(width: 200, height: 100)
             }
             
-            Slider(value: $minutes, in: 5.0...120.0, step: 5.0)
+            Slider(value: $minutes, in: 5.0...120.0, step: 5.0).frame(width: 400)
             Text(isFlipped ? countDownString(minutes: Int(self.minutes), seconds: self.stopwatch.seconds): countDownString(minutes: Int(self.stopwatch.minutes), seconds: self.stopwatch.seconds))
            .font(.largeTitle)
                 .onTapGesture {
@@ -59,13 +49,7 @@ struct CircularProgressBar: View {
                                   self.start()
             }
             
-            //5. Make the State representing the current progress, in this example we are
-            //   "loading" one percent every second
-            Button(action: {
-              
-            }) {
-                Text("Button!!!!!!")
-            }
+            Spacer().frame(height: 200)
         }
     }
     

@@ -19,20 +19,15 @@ struct ContentView: View {
           
           NavigationView{
               if session.userSession != nil {
-                    home()
-//                    mockCounting()
-                    
-
+                home()
+//                Login()
               }else{
-//                CircularProgressBar()
-//                mockCounting()
                 Login()
-//                  home()
                 
               }
           }
           .onAppear(perform: getUser)
-          
+          .edgesIgnoringSafeArea(.all)
       }
       
       func getUser() {
