@@ -19,8 +19,8 @@ struct ContentView: View {
           
           NavigationView{
               if session.userSession != nil {
-                home()
-//                Login()
+//                home()
+                Login()
               }else{
                 Login()
                 
