@@ -124,7 +124,7 @@ struct userStats: View {
         }
         
         //update score
-        self.scoreSelectedDate = 100
+        self.scoreSelectedDate = Int.random(in: 1...100)
     }
 }
 
