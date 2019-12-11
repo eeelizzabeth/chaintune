@@ -19,11 +19,25 @@ struct Login: View {
     
     var body: some View {
         NavigationView {
-            VStack(){
-                TextField("Email", text: $username).background(Color.white)
+            VStack(alignment: .center){
+                
+                Image("chaintune")
+                .resizable().frame(width:250, height: 250)
+                
+                Spacer().frame(height: 50)
+        
+                TextField("Email", text: $username).background(Color.white).frame(width: 300)
                     .padding()
-                TextField("Password", text: $password).background(Color.white)
-                .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(Color.green, lineWidth: 3)
+                    )
+                TextField("Password", text: $password).background(Color.white).frame(width: 300)
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(Color.green, lineWidth: 3)
+                    )
                 HStack{
                     Button(action: {
                         self.session.logIn(email: self.username, password: self.password){ (res, err) in
@@ -38,16 +52,19 @@ struct Login: View {
                         }
                     }){
                                        
-                        Text("Login")
+                        Text("Login").foregroundColor(Color.red)
                     }
                     NavigationLink(destination: signUp()) {
-                                  Text("Sign Up")
+                        Text("Sign Up").foregroundColor(Color.red)
                     }
                 }.alert(isPresented: $shown){
                     return Alert(title: Text(self.msg))
                 }
                
                 google().frame(width: 120, height: 50, alignment: .center)
+                
+                
+                Spacer().frame(height: 100)
                
             }
             .navigationBarTitle("Log In")
