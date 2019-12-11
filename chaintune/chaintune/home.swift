@@ -15,6 +15,7 @@ struct home: View {
         NavigationView {
             ZStack {
                 VStack {
+                    
                     //*************************Grown Plant***************************
                     Image("fruitTree")
                         .resizable().frame(width:250, height: 250)
@@ -39,7 +40,11 @@ struct home: View {
 
                     }
                     //***************************************************************
-                }
+                }.edgesIgnoringSafeArea(.all)
+                    .navigationBarTitle("Home")
+                
+                CircularProgressBar()
+                
                 SideMenu(width: 270,
                          isOpen: self.menuOpen,
                          menuClose: self.openMenu)

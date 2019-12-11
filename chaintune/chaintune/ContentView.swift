@@ -19,17 +19,16 @@ struct ContentView: View {
           
           NavigationView{
               if session.userSession != nil {
-                      home()
-//                    mockCounting()
-
-              }else{
-//                mockCounting()
-//                Login()
                 home()
+//                Login()
+              }else{
+                home()
+
+//                Login()
               }
           }
           .onAppear(perform: getUser)
-          
+          .edgesIgnoringSafeArea(.all)
       }
       
       func getUser() {
@@ -46,15 +45,15 @@ struct ContentView_Previews: PreviewProvider {
 
 
 struct google: UIViewRepresentable {
-    func makeUIView(context: UIViewRepresentableContext<google>) -> GIDSignInButton {
-        let button = GIDSignInButton()
-        button.colorScheme = .dark
-        GIDSignIn.sharedInstance()?.presentingViewController = UIApplication.shared.windows.last?.rootViewController
-        return button
-    }
-    func updateUIView(_ uiView: GIDSignInButton, context: UIViewRepresentableContext<google>) {
-        
-    }
+func makeUIView(context: UIViewRepresentableContext<google>) -> GIDSignInButton {
+    let button = GIDSignInButton()
+    button.colorScheme = .dark
+    GIDSignIn.sharedInstance()?.presentingViewController = UIApplication.shared.windows.last?.rootViewController
+    return button
+}
+func updateUIView(_ uiView: GIDSignInButton, context: UIViewRepresentableContext<google>) {
+    
+}
 }
 
 

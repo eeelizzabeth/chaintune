@@ -15,28 +15,32 @@ struct createGroup: View {
 
      var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                    TextField("Name of Group: ", text: $groupName)
-                    HStack {
-                        TextField("Number of People: ", text: $sizeGroup)
-                        Text("Max: 5").foregroundColor(.red)
-                    }
-
-                    Spacer()
-                HStack(alignment: .center) {
-                        Spacer().frame(width: 170)
-                        Button("Create") {
-                            print("Create Group!")
-                            self.getGroup(name: self.groupName, size: self.sizeGroup)
-                            print("Success!")
+            ZStack {
+                VStack(alignment: .leading) {
+                        TextField("Name of Group: ", text: $groupName)
+                        HStack {
+                            TextField("Number of People: ", text: $sizeGroup)
+                            Text("Max: 5").foregroundColor(.red)
                         }
-                    }
+
+                        Spacer()
+                    HStack(alignment: .center) {
+                            Spacer().frame(width: 170)
+                            Button("Create") {
+                                print("Create Group!")
+                                self.getGroup(name: self.groupName, size: self.sizeGroup)
+                                print("Success!")
+                            }
+                        }
+                        
+                        Spacer()
                     
-                    Spacer()
+                    }.padding()
                 
-                }.padding()
-            .navigationBarTitle("Create Group")
-        }
+            }.navigationBarTitle("Create Group")
+        }.edgesIgnoringSafeArea(.leading)
+        
+        
         
     }
     
