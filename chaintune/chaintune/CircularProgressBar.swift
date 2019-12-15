@@ -56,6 +56,11 @@ struct CircularProgressBar: View {
             }
             
             Spacer().frame(height: 200)
+        Button(action: {
+            self.stopwatch.reset()
+        }){
+            Text("Reset")
+        }
         }
     }
     

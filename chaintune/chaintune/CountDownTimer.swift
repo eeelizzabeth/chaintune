@@ -26,7 +26,7 @@ class Stopwatch: ObservableObject {
     
     // 3.Timer adjusting the time running
     func start(mins: Int) {
-        minutes = 1
+        minutes = Int(mins)
         self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.seconds = self.seconds - 1
             self.timing = self.timing + 1

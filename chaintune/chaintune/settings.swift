@@ -9,12 +9,23 @@
 import SwiftUI
 
 struct settings: View {
+    @EnvironmentObject var session: FirebaseSession
+
     var body: some View {
         NavigationView {
-            Text("Hello Settings!")
-        }
+            Text("Hello \(self.session.userSession!.displayName ?? "hwl")!")
+            VStack{
+                Button(action: {
+                    self.session.logOut()
+                }){
+                    Text("Logout").foregroundColor(.black)
+                }
+                
+            }
         
     }
+        
+}
 }
 
 struct settings_Previews: PreviewProvider {
