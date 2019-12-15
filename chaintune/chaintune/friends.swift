@@ -8,46 +8,45 @@
 
 import SwiftUI
 import Firebase
+import FirebaseFirestore
+
 struct friends: View {
     @EnvironmentObject var session: FirebaseSession
     @State var friendsList = [
-        friendCell(id: "1234", name:"Emma Watson", profile: Image("profile1"), score: 21),
-//        friendCell(name:"Billie Ellish", profile: Image("profile2")),
-//        friendCell(name:"Chris Brown", profile:Image("profile3")),
-//        friendCell(name:"Anne Hathaway", profile:Image("profile4")),
-//        friendCell(name:"Anna Farris", profile:Image("profile1"))
+        friendCell(id: "qj2HLYVWqBbuqog7m9cp", name:"Emma Watson", profile: Image("profile1"), score: 6490, pressed: false),
+        friendCell(id: "SKSvbalTYFEtOCfpswgw", name:"Billy Harvey", profile: Image("profile2"), score: 5409, pressed: false),
+        friendCell(id: "vKlOJnHHFkpv15NDE2YD", name:"Ann Stevens", profile: Image("profile3"), score: 4231, pressed: false)
+
     ]
-       
     var body: some View {
         VStack {
+        
+            List (friendsList) { friend in
+                friendCell(id: friend.id, name: friend.name, profile: friend.profile, score: friend.score, pressed: false)
+            }
+            
             Button(action: {
-               _ = db.collection("users").getDocuments() { (querySnapshot, err) in
-                    if let err = err {
-                        print("Error getting documents: \(err)")
-                    } else {
-                        for document in querySnapshot!.documents {
-                            let current = document.data()
-                            let newFriend = friendCell(id: current["ID"] as! String, name: current["Name"] as! String, profile:Image("profile1"), score: 6)
-                            if( current["ID"] as! String == String(self.session.userSession?.uid ?? "noID")){
-                                continue
+                _ = db.collection("users").order(by: "Total", descending: true).getDocuments() { (querySnapshot, err) in
+                        if let err = err {
+                            print("Error getting documents: \(err)")
+                        } else {
+                            for document in querySnapshot!.documents {
+                                let current = document.data()
+                                if( current["ID"] as! String == String(self.session.userSession?.uid ?? "noID")){
+                                    continue
+                                }
+                                let newFriend = friendCell(id: current["ID"] as! String, name: current["Name"] as! String, profile:Image("profile1"), score: current["Total"] as! Int, pressed: false)
+                                 print(current["Friends"] as! [String])
+                                self.friendsList.append(newFriend)
+
                             }
-                        
-                                
-                            self.friendsList.append(newFriend)
-                            
-                            print("\(document.documentID) => \(document.data())")
                         }
+
                     }
                 
-                }
-                print("pressed")
             }){
-                Text("TEST")
-            }
-          
-            List (friendsList) { friend in
-                friendCell(id: friend.id, name: friend.name, profile: friend.profile, score: friend.score)
-            }
+                Text("Show More")
+                    }
         }
     }
     

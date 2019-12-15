@@ -10,18 +10,18 @@ import SwiftUI
 
 struct leaderboard: View {
     var body: some View {
-        NavigationView {
-            TabView {
-                friends()
-                    .tabItem {
-                        Text("Friends")
-                }
-                groups()
-                    .tabItem {
-                        Text("Groups")
+        TabView {
+              friends()
+                  .tabItem {
+                      Text("Global")
+              }
+              groups()
+                  .tabItem {
+                    Text("Friends")
                 }
             }
-        }.navigationBarTitle("Leaderboard")
+            .navigationBarTitle("Leaderboard")
+            .scaledToFit()
          
     }
 }

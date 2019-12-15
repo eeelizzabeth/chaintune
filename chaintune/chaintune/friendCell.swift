@@ -28,14 +28,17 @@ struct friendCell: View, Identifiable, Comparable {
     var name: String
     var profile: Image
     var score: Int
-    @State var pressed = false
+    @State var pressed: Bool
     var body: some View {
+        
         HStack {
             profile.resizable().frame(width:50, height: 50)
             Text(name)
             Text(String(score))
             Button(action: {
-                self.pressed.toggle()
+                if(!self.pressed){
+                    self.pressed.toggle()
+                }
                 db.collection("users").document(self.session.userSession!.uid).updateData([
                     "Friends":  FieldValue.arrayUnion(["\(self.id)"])
                 ])

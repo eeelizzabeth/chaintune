@@ -137,6 +137,11 @@
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
+		<key>JBCalendarDatePicker.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
 		<key>Pods-chaintune-chaintuneUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>

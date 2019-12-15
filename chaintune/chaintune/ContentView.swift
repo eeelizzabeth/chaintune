@@ -19,12 +19,9 @@ struct ContentView: View {
           
           NavigationView{
               if session.userSession != nil {
-//                home()
-                Login()
-              }else{
                 home()
-
-//                Login()
+              }else{
+                Login()
               }
           }
           .onAppear(perform: getUser)

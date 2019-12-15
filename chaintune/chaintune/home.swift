@@ -17,28 +17,11 @@ struct home: View {
                 VStack {
                     
                     //*************************Grown Plant***************************
-                    Image("fruitTree")
-                        .resizable().frame(width:250, height: 250)
-                        .clipShape(Circle())
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.green, lineWidth: 2))
-                                    .shadow(radius: 10)
+
                     
                     //***************************************************************
                     Spacer().frame(height: 200)
-                    //*************************Add Icon******************************
-                    NavigationLink(destination: createGroup()) {
-                        HStack() {
-                            Spacer().frame(width: 170)
-                            Image("addIcon")
-                            .renderingMode(Image.TemplateRenderingMode?.init(Image
-                            .TemplateRenderingMode.original))
-                            .resizable().frame(width:60, height:60)
-                            Spacer().frame(width: 0)
-                        }
-
-                    }
+           
                     //***************************************************************
                 }.edgesIgnoringSafeArea(.all)
                     .navigationBarTitle("Home")

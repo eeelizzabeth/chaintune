@@ -24,10 +24,9 @@ class Stopwatch: ObservableObject {
 
     var timer = Timer()
     
-    // 3.
+    // 3.Timer adjusting the time running
     func start(mins: Int) {
-        minutes = Int(mins)
-//        Int(mins)
+        minutes = 1
         self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.seconds = self.seconds - 1
             self.timing = self.timing + 1
@@ -48,24 +47,22 @@ class Stopwatch: ObservableObject {
             }
               
             
-            
-            
-//            print(self.minutes)
-        }
+            }
 
     }
     
-    // 4.
+    // 4.Stop timer
     func stop() {
         timer.invalidate()
     }
     
-    // 5.
+    // 5. Reset Timer
     func reset() {
         counter = 0
         timer.invalidate()
     }
     
+    //6. Timer adding records to the databse
     func addRecord(finished: Bool){
       let userRecord = db.collection("users").document(self.sessionID)
        

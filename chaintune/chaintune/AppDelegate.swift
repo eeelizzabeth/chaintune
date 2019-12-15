@@ -9,9 +9,12 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import FirebaseCore
+
 let db = Firestore.firestore()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+    
     var googleSign: Bool = false
     var uidTemp: String = ""
     

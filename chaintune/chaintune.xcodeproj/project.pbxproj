@@ -36,7 +36,6 @@
 		D1131EA5239607D0008EDD96 /* leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1131EA4239607CF008EDD96 /* leaderboard.swift */; };
 		D1131EA723960807008EDD96 /* userStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1131EA623960806008EDD96 /* userStats.swift */; };
 		D1131EA92396085D008EDD96 /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1131EA82396085D008EDD96 /* settings.swift */; };
-		D1131EAF239C4347008EDD96 /* mockCounting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1131EAE239C4346008EDD96 /* mockCounting.swift */; };
 		D1131EB1239C4384008EDD96 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1131EB0239C4384008EDD96 /* CountDownTimer.swift */; };
 		D1131EB3239C46D8008EDD96 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1131EB2239C46D8008EDD96 /* CircularProgressBar.swift */; };
 		D16392072386315F0076E2F1 /* createGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16392062386315F0076E2F1 /* createGroup.swift */; };
@@ -101,7 +100,6 @@
 		D1131EA4239607CF008EDD96 /* leaderboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leaderboard.swift; sourceTree = "<group>"; };
 		D1131EA623960806008EDD96 /* userStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userStats.swift; sourceTree = "<group>"; };
 		D1131EA82396085D008EDD96 /* settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
-		D1131EAE239C4346008EDD96 /* mockCounting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mockCounting.swift; sourceTree = "<group>"; };
 		D1131EB0239C4384008EDD96 /* CountDownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
 		D1131EB2239C46D8008EDD96 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		D16392062386315F0076E2F1 /* createGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createGroup.swift; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 				C147414B2390D8FE00BBEE0A /* Login.swift */,
 				C147414D2390DC6200BBEE0A /* signUp.swift */,
 				D163920A238632580076E2F1 /* home.swift */,
-				D1131EAE239C4346008EDD96 /* mockCounting.swift */,
 				D1131EB0239C4384008EDD96 /* CountDownTimer.swift */,
 				D1131EA4239607CF008EDD96 /* leaderboard.swift */,
 				D1131EA623960806008EDD96 /* userStats.swift */,
@@ -535,7 +532,6 @@
 				C198BA73236940AF00EA6692 /* AppDelegate.swift in Sources */,
 				935E60E1239C5FDB00FB36DB /* RKManager.swift in Sources */,
 				C147414C2390D8FE00BBEE0A /* Login.swift in Sources */,
-				D1131EAF239C4347008EDD96 /* mockCounting.swift in Sources */,
 				D1131EB3239C46D8008EDD96 /* CircularProgressBar.swift in Sources */,
 				C147414E2390DC6200BBEE0A /* signUp.swift in Sources */,
 				D16392072386315F0076E2F1 /* createGroup.swift in Sources */,
@@ -725,6 +721,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"chaintune/Preview Content\"";
+				DEVELOPMENT_TEAM = R38Y79QJ4S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = chaintune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
